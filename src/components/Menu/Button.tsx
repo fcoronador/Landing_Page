@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-export const Button = ({ option }) => {
+export const Button = ({ option }:any) => {
 
     return (
         <Link to={option.route}>

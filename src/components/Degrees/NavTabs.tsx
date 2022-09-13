@@ -1,9 +1,9 @@
 
-export const NavTabs = ({ degree, styles, setActiveTab }) => {
+export const NavTabs = ({ degree, styles, setActiveTab }: any) => {
 
 
 
-    const handleNavs = (text) => {
+    const handleNavs = (text: string) => {
         setActiveTab(text)
     }
 
@@ -11,7 +11,9 @@ export const NavTabs = ({ degree, styles, setActiveTab }) => {
 
     return (
         <div className={styles}
-            onClick={(e) => { handleNavs(e.target.textContent) }}>
+            onClick={(e) => { 
+                const navname:string = (e.target as HTMLElement).textContent ?? '' 
+                handleNavs(navname) }}>
             {degree.name}
         </div>
     )

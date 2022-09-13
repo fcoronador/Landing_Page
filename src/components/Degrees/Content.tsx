@@ -1,4 +1,4 @@
-export const Content = ({ content }) => {
+export const Content = ({ content }: any) => {
 
     const { title, center, date, location } = content
 
