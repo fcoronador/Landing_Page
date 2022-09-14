@@ -15,7 +15,7 @@
 @tailwind utilities;
 
 .globo {
-  position: fixed;
+  position: relative;
   font-size: 12px;
   border-radius: var(--borde);
   padding: var(--borde);

@@ -6,13 +6,13 @@ export const Menu = () => {
 
         {
             'name': 'Profile',
-            'w': '2/5',
+            'w': 'auto',
             'route': '/profile'
 
         },
         {
             'name': 'Degrees',
-            'w': '1/2',
+            'w': 'full',
             'route': '/degrees'
         },
         {
@@ -20,18 +20,14 @@ export const Menu = () => {
             'w': '3/4',
             'route': '/projects'
         }
-        , {
-            'name': 'Contacts',
-            'w': '3/4',
-            'route': '/'
-        }]
+    ]
 
     const generateId = () => {
         return Math.random().toString(20).substr(2);
     }
 
     return (<div className='self-end font-["BreeSerif"] text-3xl p-8 text-right'>
-        <div className='grid grid-cols-1 grid-rows-4 justify-items-end'>
+        <div className='grid grid-cols-1 justify-items-end'>
             {options.map((option) => {
 
                 return (<Button

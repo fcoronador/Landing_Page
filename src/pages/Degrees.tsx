@@ -4,6 +4,7 @@ import { NavTabs } from "../components/Degrees/NavTabs"
 import { Tab } from "../components/Degrees/Tab"
 import {  contentsDB  } from "../assets/db/degrees"
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
 export const Degrees = () => {
 
@@ -46,6 +47,11 @@ export const Degrees = () => {
             <div className="flex justify-between my-5">
                 <Header />
                 <Avatar />
+            </div>
+            <div className="ml-10 text-white">
+                <Link to={'/'}>        <span className="hover:underline">Home /</span> </Link>
+                <Link to={'/profile'}> <span className="hover:underline">Profile /</span> </Link>
+                <Link to={'/projects'}><span className="hover:underline">Projects /</span> </Link>
             </div>
             <div className="text-center text-white">
                 <span className="font-['BreeSerif'] text-4xl">Degrees</span>

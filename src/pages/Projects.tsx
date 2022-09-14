@@ -1,6 +1,6 @@
 import { Header } from "../components/Header"
 import { Avatar } from "../components/Avatar"
-
+import { Link } from "react-router-dom"
 
 export const Projects = () => {
     return (
@@ -9,6 +9,11 @@ export const Projects = () => {
             <div className="flex justify-between my-5">
                 <Header />
                 <Avatar />
+            </div>
+            <div className="ml-10 text-white">
+                <Link to={'/'}>        <span className="hover:underline">Home /</span> </Link>
+                <Link to={'/profile'}> <span className="hover:underline">Profile /</span> </Link>
+                <Link to={'/degrees'}> <span className="hover:underline">Degrees /</span> </Link>
             </div>
             <div className="text-center text-white">
                 <span className="font-['BreeSerif'] text-4xl">Projects</span>

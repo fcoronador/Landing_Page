@@ -1,5 +1,6 @@
 import { Header } from "../components/Header"
 import { Avatar } from "../components/Avatar"
+import { Link } from "react-router-dom"
 import html from '../assets/img/lang/html5_icon.svg'
 import css from '../assets/img/lang/css3_icon.svg'
 import js from '../assets/img/lang/javascript_icon.svg'
@@ -21,11 +22,16 @@ export const Profile = () => {
     return (
         <div className=" h-screen">
             {/* row1 */}
-            <div className="flex justify-between my-5">
+            <div className="flex justify-between mt-4">
                 <Header />
                 <Avatar />
             </div>
             {/* row2 */}
+            <div className="ml-10 text-white">
+                <Link to={'/'}>         <span className="hover:underline">Home /</span> </Link>
+                <Link to={'/degrees'}>  <span className="hover:underline">Degrees /</span> </Link>
+                <Link to={'/projects'}> <span className="hover:underline">Projects /</span> </Link>
+            </div>
             <div className="flex flex-wrap sm:flex-wrap md:flex-nowrap">
                 <div className="flex flex-col md:w-1/2">
                     <div className="text-center text-white">
