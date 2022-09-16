@@ -7,7 +7,7 @@ const generateId = () => {
 export const Tab = ({ degreeSelected }:any ) => {
 
     return (
-        <div className="mx-auto mt-5 text-center col-span-5 text-xl">
+        <div className="mx-auto rounded-md  py-3 w-full border-t-2  border-slate-500 bg-white text-center col-span-5 text-xl">
             {degreeSelected.map((con:any) => {
                 return <Content key={generateId()} content={con} />
             })}

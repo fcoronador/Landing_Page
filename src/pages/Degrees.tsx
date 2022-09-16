@@ -58,13 +58,13 @@ export const Degrees = () => {
             </div>
 
             <div className="w-full mx-auto mt-5 px-20 font-['Archivo']">
-                <div className="py-2 rounded-md grid grid-cols-5 gap-2 bg-slate-100 ">
+                <div className="pb-2 rounded-md sm:flex  md:grid  md:grid-cols-5 gap-2  ">
                     {/* Tab selector */}
                     {
                         degrees.map((degree) => {
                             const styles = degree.name === activeTab ?
-                                "mx-auto font-['BreeSerif'] cursor-pointer text-xl hover:bg-slate-300 underline" :
-                                "mx-auto font-['BreeSerif'] cursor-pointer text-xl hover:bg-slate-200 "
+                                " text-center md:rounded-md border-b-2 md:border-r-2  border-slate-500 font-['BreeSerif'] cursor-pointer text-xl bg-slate-300" :
+                                " text-center md:rounded-md font-['BreeSerif'] cursor-pointer text-xl hover:bg-slate-200 hover:underline bg-slate-100"
 
                             return <NavTabs
                                 key={generateId()}
@@ -74,7 +74,7 @@ export const Degrees = () => {
                             />
                         })
                     }
-
+                    
                     {/* Content */}
                     <Tab degreeSelected={degreeSelected} />
                 </div>
