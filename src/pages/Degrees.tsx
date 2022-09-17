@@ -58,7 +58,7 @@ export const Degrees = () => {
             </div>
 
             <div className="w-full mx-auto mt-5 px-20 font-['Archivo']">
-                <div className="pb-2 rounded-md sm:flex  md:grid  md:grid-cols-5 gap-2  ">
+                <div className="pb-2 rounded-md md:grid  md:grid-cols-5  gap-2 ">
                     {/* Tab selector */}
                     {
                         degrees.map((degree) => {
@@ -74,7 +74,7 @@ export const Degrees = () => {
                             />
                         })
                     }
-                    
+
                     {/* Content */}
                     <Tab degreeSelected={degreeSelected} />
                 </div>
